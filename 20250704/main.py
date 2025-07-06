@@ -26,7 +26,7 @@ plt.title('Friston Free Energy Principle as Sensor Fusion')
 plt.legend()
 plt.show()
 
-
+=
 # %%
 import numpy as np
 import matplotlib.pyplot as plt
