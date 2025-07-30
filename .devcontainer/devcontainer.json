@@ -1,0 +1,18 @@
+{
+  // 1️⃣ Base image – keep the default “universal” Dev Container image
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  // 2️⃣ Feature that installs a lightweight X-server + Openbox + x11vnc + noVNC
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+
+  // 3️⃣ Expose port 6080 and tell Codespaces to open it in your browser
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "desktop",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
